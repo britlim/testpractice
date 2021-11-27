@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assessment Practice</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="board"></div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="uname"
+        id="uname"
+        required
+      />
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" />
+
+      <button type="submit" id="login">Login</button>
+      <button type="delete" id="delete">Delete</button>
+      <button type="create" id="create">Create</button>
+      <button type="update" id="update">Update</button>
+
+      <input
+        type="text"
+        placeholder="Update Username to"
+        name="updateField"
+        id="updateField"
+      />
+    </div>
+    <script src="./client/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+#board {
+  margin: 0;
+  height: 100%;
+}
+.h1 {
+  font-size: 50px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.userBox {
+  background-color: black;
+  color: white;
+  min-width: 1200px;
+  min-height: 500px;
+}
