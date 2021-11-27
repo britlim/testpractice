@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', async () => {
 
   const board = document.getElementById('board');
-  const helloWorld = document.createElement('h1');
-  helloWorld.innerText = 'Hello World'
+  const TestTest = document.createElement('h1');
+  TestTest.innerText = 'Test Test'
 
-  board.appendChild(helloWorld);
+  board.appendChild(TestTest);
 
   loginButton = document.getElementById('login');
 
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(body)
     })
-    .then(res => res.json())
+    // .then(res => res.json())
     .then(user => {
       const userBox = document.createElement('div');
       userBox.setAttribute('id', 'userbox');
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(body)
     })
-    .then(res => res.json())
+    // .then(res => res.json())
     .then(user => {
       const userBox = document.getElementById('userbox');
       board.removeChild(userBox);
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(body)
     })
-    .then(res => res.json())
+    // .then(res => res.json())
     .then(user => {
       const userBox = document.createElement('div');
       userBox.setAttribute('id', 'userbox');
@@ -87,11 +87,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     }
     fetch('/user/update', {
-      method: 'PATCH',
+      method: 'PUT',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(body)
     })
-    .then(res => res.json())
+    // .then(res => res.json())
     .then(user => {
       const userBox = document.createElement('div');
       userBox.setAttribute('id', 'userbox');
